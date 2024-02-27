@@ -4,6 +4,10 @@
 <remote name="cr"
           fetch="https://github.com/crdroidandroid"
           revision="13.0" />
+          
+ <remote name="home"
+          fetch="https://github.com/samsungexynos9810"
+          revision="13.0" />
 
   <!--Device tree-->
   <project name="android_device_samsung_exynos9810-common-V2" path="device/samsung/exynos9810-common" remote="cr"/>
@@ -12,13 +16,13 @@
   <project name="android_device_samsung_crownlte-V2" path="device/samsung/crownlte" remote="cr"/>
 
   <!-- Vendor -->
-  <project name="android_vendor_samsung_exynos9810-common-V2" path="vendor/samsung/exynos9810-common" remote="cr"/>
-  <project name="android_vendor_samsung_starlte-V2" path="vendor/samsung/starlte" remote="cr"/>
-  <project name="android_vendor_samsung_star2lte-V2" path="vendor/samsung/star2lte" remote="cr"/>
-  <project name="android_vendor_samsung_crownlte-V2" path="vendor/samsung/crownlte" remote="cr"/>
+  <project name="android_vendor_samsung_exynos9810-common-V2" path="vendor/samsung/exynos9810-common" remote="home"/>
+  <project name="android_vendor_samsung_starlte-V2" path="vendor/samsung/starlte" remote="home"/>
+  <project name="android_vendor_samsung_star2lte-V2" path="vendor/samsung/star2lte" remote="home"/>
+  <project name="android_vendor_samsung_crownlte-V2" path="vendor/samsung/crownlte" remote="home"/>
 
   <!-- SLSI -->
-  <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="cr"/>
+  <project name="android_device_samsung_slsi_sepolicy" path="device/samsung_slsi/sepolicy" remote="home"/>
   
   <!-- Kernel -->
   <project name="android_kernel_samsung_exynos9810-V2" path="kernel/samsung/exynos9810" remote="cr"/>
